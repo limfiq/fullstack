@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Project backend dengan express dan mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/limfiq/fullstack/backend"
+  },
+  "keywords": [
+    "backend",
+    "express"
+  ],
+  "author": "limfiq",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
