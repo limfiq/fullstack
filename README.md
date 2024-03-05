@@ -13,6 +13,6 @@ Backend
 Frontend
 <ul>
 <li>npm install</li>
-<li>cd backend</li>
-<li>node index / nodemon index</li>
+<li>cd frontend</li>
+<li>npm start</li>
 </ul>
