@@ -1,4 +1,4 @@
-import {Sequelize} from "Sequelize";
+import {Sequelize} from "sequelize";
 const db=new Sequelize('menu','root','',{
 	host:'localhost',
 	dialect:'mysql'
