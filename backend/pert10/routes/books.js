@@ -54,12 +54,13 @@ router.patch('/:id', getBook, async (req, res) => {
 // Delete a book
 router.delete('/:id', getBook, async (req, res) => {
   try {
-    await res.book.remove();
+    await Book.deleteOne({ _id: res.book._id }); // Use the model's deleteOne method
     res.json({ message: 'Deleted Book' });
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
 });
+
 
 async function getBook(req, res, next) {
   let book;
