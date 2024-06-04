@@ -8,9 +8,13 @@
     <body>
         <h1>User List</h1>
         <ul>
+            <% if (users.length > 0) { %>
             <% users.forEach(function(user) { %>
             <li><%= user.name %> (<%= user.email %>)</li>
             <% }); %>
+            <% } else { %>
+            <li>No users found</li>
+            <% } %>
         </ul>
     </body>
 
