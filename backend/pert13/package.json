@@ -1,22 +1,17 @@
 {
   "name": "pert13",
   "version": "1.0.0",
-<<<<<<< HEAD
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
-=======
+    },
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
->>>>>>> 44efef2b11d1a315b7561aad1f03bf5b7002f842
-  },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
-<<<<<<< HEAD
   "description": "",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -29,12 +24,12 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
-=======
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.4.3"
->>>>>>> 44efef2b11d1a315b7561aad1f03bf5b7002f842
   }
+
 }
