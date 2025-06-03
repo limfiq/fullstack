@@ -7,15 +7,10 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
-const db = mongoose.connection;
-db.on('error', (error) => console.error(error));
-db.once('open', () => console.log('Terhubung ke MongoDB'));
-
+// Connect to MongoDB without deprecated options
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log('Terhubung ke MongoDB'))
+    .catch((error) => console.error(error));
 app.use(bodyParser.json());
 
 const mahasiswaRouter = require('./routes/mahasiswa');
